@@ -66,7 +66,7 @@ At this stage the script auto detects the IP addresses of the server, if there i
 
 If you do setup multiple masternodes on a single VPS, make sure the VPS is capable of running more than one masternode or your masternode rewards will suffer. **You have been warned.**
 
-Once you have setup the 2nd or more masternodes, use the output of the script for each masternode and follow the [steps above](https://github.com/click2install/aiascoin#how-to-setup-your-masternode-with-this-script-and-a-cold-wallet-on-your-pc) in your wallet, where each new masternode is a new line in your `masternode.conf` file. **NOTE:** All the port numbers in your masternode.conf file will be 12218 or the wallet will not re-start after you save the config file.
+Once you have setup the 2nd or more masternodes, use the output of the script for each masternode and follow the [steps above](https://github.com/click2install/aiascoin#how-to-setup-your-masternode-with-this-script-and-a-cold-wallet-on-your-pc) in your wallet, where each new masternode is a new line in your `masternode.conf` file. **NOTE:** All the port numbers in your masternode.conf file will be 10721 or the wallet will not re-start after you save the config file.
 
 Note that multiple masternodes use only one instance of the `aiasd` and `aias-cli` binary files located in `/usr/local/bin` and they each have their own configuration located in `/home/<username>/.aiascore` folder.
 
