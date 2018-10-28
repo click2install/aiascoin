@@ -23,8 +23,6 @@ GREEN='\033[0;32m'
 YELLOW='\033[1;33m'
 NC='\033[0m'
 
-set -x
-
 function checks() 
 {
   if [[ $(lsb_release -d) != *16.04* ]]; then
