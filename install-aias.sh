@@ -287,7 +287,6 @@ addnode=188.166.90.4
 listen=1
 server=1
 daemon=1
-staking=1
 EOF
 }
 
