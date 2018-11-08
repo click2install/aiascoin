@@ -72,6 +72,21 @@ Note that multiple masternodes use only one instance of the `aiasd` and `aias-cl
 
 &nbsp;
 
+## Bootstrapping from an existing node
+If you have an existing node running on the same VPS and you want to bootstrap your new node from the existing one so you dont have to wait for it to sync the blockchain you can run the following commands (as root) one at a time after the script finishes:
+```
+systemctl stop <new node username>.service
+
+cd <existing node username>
+cp -r .aias/chainstate/ .aias/blocks/ .aias/sporks/ .aias/zerocoin/ /home/<new node username>/.aias/
+chown -R <new node username>: /home/<new node username>/.aias/
+
+systemctl start <new node username>.service
+cd ~
+```
+
+&nbsp;
+
 
 ## Running the script
 When you run the script it will tell you what it will do on your system. Once completed there is a summary of the information you need to be aware of regarding your node setup which you can copy/paste to your local PC. **Make sure you keep this information safe for later.**
